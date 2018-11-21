@@ -59,3 +59,4 @@ cat /proc/cpuinfo| grep "processor"| wc -l
 ```bash
 cat /proc/cpuinfo | grep 'cpu MHz'
 ```
+nmon analyser: https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Power+Systems/page/nmon_analyser
