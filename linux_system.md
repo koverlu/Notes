@@ -62,5 +62,9 @@ cat /proc/cpuinfo | grep 'cpu MHz'
 nmon
 ```bash
 nmon -f -s60 -c10 -m .
+#-f 输出excel格式
+#-s 采样周期(60s)
+#-c 采样次数(10次)
+#-m 输出目录(当前目录)
 ```
 nmon analyser: https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Power+Systems/page/nmon_analyser
