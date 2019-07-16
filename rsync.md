@@ -1,5 +1,5 @@
 # Rsync
-常用指令：
+## 常用指令：
 选项 |说明
 -|-
 -a, ––archive | 归档模式，表示以递归方式传输文件，并保持所有文件属性，等价于 -rlptgoD (注意不包括 -H)
@@ -28,6 +28,7 @@
 -n, ––dry-run | 显示哪些文件将被传输
 ––list-only | 仅仅列出文件而不进行复制
 
+## 用例：
 ```bash
 # 不同步config/kkk目录，同步所有头文件（如有链接，将复制源文件），在接收端删除发送端没有的文件。
 rsync -avL --delete --exclude "config/kkk/" --include "*/" --include "*.h" --include "*.hpp" --exclude "*" ./ xxx@xxUBT:/home/xxx/workspace/xxx
