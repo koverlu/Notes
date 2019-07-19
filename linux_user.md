@@ -148,3 +148,8 @@ cat skype_backup_20090626.tar.gz.a* >skype_backup_cat.tar.gz
 ```bash
 tar -zxvf skype_backup_cat.tar.gz
 ```
+
+在指定类型的文件中搜索：
+```bash 
+grep 'ConnectInterface' --include '*.cpp' ./ -r
+```
